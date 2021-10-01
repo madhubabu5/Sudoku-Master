@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <h1>Sudoku Master</h1>
+    <div id="setup-game">
+        <div id="difficulty">
+            <h3>Choose Difficulty: </h3>
+            <label><input id="diff-1" type="radio" name="difficulty" value="easy" checked>Easy</label>
+            <label><input id="diff-2" type="radio" name="difficulty" value="medium">Medium</label>
+            <label><input id="diff-3" type="radio" name="difficulty" value="hard">Hard</label>
+        </div>
+        <div id="time">
+            <h3>Choose Time Limit: </h3>
+            <label><input id="time-1" type="radio" name="time" value="threeMin" checked>3 Min</label>
+            <label><input id="time-2" type="radio" name="time" value="fiveMin">5 Min</label>
+            <label><input id="time-3" type="radio" name="time" value="tenMin">10 Min</label>
+        </div>
+        <div id="theme">
+            <h3>Choose Theme: </h3>
+            <label><input id="theme-1" type="radio" name="theme" value="light" checked>Light</label>
+            <label><input id="theme-2" type="radio" name="theme" value="dark">Dark</label>
+        </div>
+    </div>
+    <button id="start-btn">Create New Game</button>
+</header>
+<body>
+    <div id="stats">
+        <p id="timer"></p>
+        <p id="lives"></p>
+    </div>
+    <div id="game">
+        <div id="number-container" class="hidden">
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">3</p>
+            <p id="four">4</p>
+            <p id="five">5</p>
+            <p id="six">6</p>
+            <p id="seven">7</p>
+            <p id="eight">8</p>
+            <p id="nine">9</p>
+        </div>
+        <div id="board"></div>
+    </div>
+
+    
+</body>
+<footer>
+    Made by Madhubabu
+</footer>
+    <script src="index.js"></script>
+</html>

@@ -1,0 +1,153 @@
+.hidden{
+    display: none;
+}
+.dark{
+    background-color: #333333;
+    color: white;
+}
+header{
+    padding-bottom: 10px;
+    border-bottom: 1px solid red;
+    text-align: center;
+}
+h1{
+    font-size: 45pt;
+}
+#setup-game{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+/* setup-game children*/
+#setup-game>*{
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+button{
+    justify-self: center;
+}
+/*===== Styling body =====*/
+#timer,#lives{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+#game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* all paragraph children of number container */
+#number-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#number-container>p{
+    border: 1px solid black;
+    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+    font-size: 30pt;
+    margin-left: 50px;
+    margin-top: 5px;
+    text-align: center;
+}
+#board{
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 50%;
+    height: 50%;
+}
+.tile{
+    border:1px solid black;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    margin:0px;
+    vertical-align:middle;
+    font-size:30pt;
+}
+.selected{
+    background-color: lightblue;
+}
+p.incorrect{
+    background-color: red;
+}
+.rightBorder{
+    border-right: 4px solid black;
+}
+.bottomBorder{
+    border-bottom: 4px solid black;
+}
+.rightBorderWhite{
+    border-right: 4px solid white;
+}
+.bottomBorderWhite{
+    border-bottom: 4px solid white;
+}
+footer{
+    background-color: lightgray;
+    text-align: center;
+}
+
+@media screen and (min-width:750px) and (max-width:1300px){
+    #setup-game {
+        flex-direction: column;
+   }
+    #board {
+        margin: 10px;
+        width: 400px;
+        height: 400px;
+   }
+    .tile {
+        width: 40px;
+        height: 40px;
+        font-size: 25pt;
+   }
+    #number-container {
+        width: 300px;
+   }
+    #number-container>p {
+        margin-left: 10px;
+        width: 30px;
+        height: 40px;
+        font-size: 30pt;
+        text-align: center;
+   }
+}
+ @media screen and (max-width: 750px){
+    #setup-game {
+        flex-direction: column;
+   }
+    #board {
+        margin: 10px;
+        width: 300px;
+        height: 300px;
+   }
+    .tile {
+        width: 30px;
+        height: 30px;
+        font-size: 25pt;
+   }
+    #number-container {
+        width: 300px;
+   }
+    #number-container>p {
+        margin-left: 10px;
+        width: 30px;
+        height: 40px;
+        font-size: 30pt;
+        text-align: center;
+   }
+}
