@@ -2,7 +2,7 @@
 
 View Project: 
 
-Feature of Sudoku-Master
+Features of Sudoku-Master
 
 User can play Sudoko Master game by selecting appropriate numbers from the numbers list.
 
